@@ -32,10 +32,12 @@ int main()
     long long count = 0;
     for (long long i = 1; i < v.size(); i++)
     {
-
+        // condition in problem statement
         if (v[i - 1] > v[i])
         {
+            // add the difference between 2 to count
             count += v[i - 1] - v[i];
+            // make the value equal to previous largerone
             v[i] = v[i - 1];
         }
     }
